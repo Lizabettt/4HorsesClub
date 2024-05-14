@@ -470,25 +470,25 @@
   border: none;
   cursor: no-drop;
 }
-.btn__type-dark {
+.btn-type-dark {
   background-color: #1f1f1f;
   color: #ffffff;
 }
-.btn__type-dark:hover {
+.btn-type-dark:hover {
   background-color: #fbce51;
   color: #1f1f1f;
   border: none;
 }
-.btn__type-light:hover {
+.btn-type-light:hover {
   background-color: #1f1f1f;
   color: #ffffff;
 }
 
-.btn__type-left {
+.btn-type-left {
   background-image: url(../images/btn_left.svg);
   background-repeat: no-repeat;
 }
-.btn__type-right {
+.btn-type-right {
   background-image: url(../images/btn_right.svg);
   background-repeat: no-repeat;
 }
