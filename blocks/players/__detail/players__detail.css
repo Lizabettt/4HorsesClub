@@ -1,0 +1,20 @@
+.players__detail {
+  padding-block: 0;
+  padding-inline: 0;
+  text-decoration: none;
+  border: #3057a2 1px solid;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  width: 113px;
+  height: 35px;
+  display: flex;
+  color: #3057a2;
+  align-items: center;
+  justify-content: center;
+}
+.players__detail:hover {
+  background-color: #3057a2;
+  color: #ffffff;
+}

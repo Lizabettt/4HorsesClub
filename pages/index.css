@@ -1,531 +1,77 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 
-.page {
-  background-color: #ffffff;
-  color: #313131;
-  margin: 0 auto;
-  max-width: 1920px;
-  box-sizing: border-box;
+@import url(../blocks/btn-type-dark/btn-type-dark.css);
+@import url(../blocks/btn-type-left/btn-type-left.css);
+@import url(../blocks/btn-type-light/btn-type-light.css);
+@import url(../blocks/btn-type-right/btn-type-right.css);
+@import url(../blocks/btn/btn.css);
 
-  font-family: "Golos", sans-serif;
-  font-style: normal;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.rotation {
-  animation: rotation 20s running infinite linear;
-}
-.header {
-  background-image: url(../images/fon.jpg);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/footer.css);
 
-  background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
-}
-.header__pic {
-  width: 100%;
-  height: 100%;
-}
+@import url(../blocks/header/__box/header__box.css);
+@import url(../blocks/header/__btn/header__btn.css);
+@import url(../blocks/header/__btns/header__btns.css);
+@import url(../blocks/header/__logo-pic/header__logo-pic.css);
+@import url(../blocks/header/__logo-text/header__logo-text.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__pic-chess-four/header__pic-chess-four.css);
+@import url(../blocks/header/__pic-chess-one/header__pic-chess-one.css);
+@import url(../blocks/header/__pic-chess-thee/header__pic-chess-thee.css);
+@import url(../blocks/header/__pic-chess-two/header__pic-chess-two.css);
+@import url(../blocks/header/__pic-sun/header__pic-sun.css);
+@import url(../blocks/header/__pic-town/header__pic-town.css);
+@import url(../blocks/header/__pic/header__pic.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__title-span/header__title-span.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/header.css);
 
-.header__pic-chess-one {
-  background-image: url(../images/chess1.svg);
-  background-repeat: no-repeat;
+@import url(../blocks/info/__bender-box/info__bender-box.css);
+@import url(../blocks/info/__bender-pic/info__bender-pic.css);
+@import url(../blocks/info/__bender/info__bender.css);
+@import url(../blocks/info/__lecture/_text/info__lecture_text.css);
+@import url(../blocks/info/__lecture/info__lecture.css);
+@import url(../blocks/info/__table-box/info__table-box.css);
+@import url(../blocks/info/__table-cell-type-fat-del/info__table-cell-type-fat-del.css);
+@import url(../blocks/info/__table-cell-type-fat/info__table-cell-type-fat.css);
+@import url(../blocks/info/__table-cell/info__table-cell.css);
+@import url(../blocks/info/__table/info__table.css);
+@import url(../blocks/info/__title-type-p/info__title-type-p.css);
+@import url(../blocks/info/__title-type-red/info__title-type-red.css);
+@import url(../blocks/info/__title/info__title.css);
 
-  position: absolute;
-  top: 36%;
-  left: 52.5%;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-.header__pic-chess-two {
-  background-image: url(../images/chess2.svg);
-  background-repeat: no-repeat;
+@import url(../blocks/main/main.css);
 
-  position: absolute;
-  top: 22%;
-  left: 69.7%;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-.header__pic-chess-thee {
-  background-image: url(../images/chess3.svg);
-  background-repeat: no-repeat;
+@import url(../blocks/marquee/__items/marquee__items.css);
+@import url(../blocks/marquee/marquee.css);
 
-  position: absolute;
-  top: 63.6%;
-  left: 58%;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background-size: 10%;
-}
-.header__pic-chess-four {
-  background-image: url(../images/chess4.svg);
-  background-repeat: no-repeat;
+@import url(../blocks/page/page.css);
 
-  position: absolute;
-  top: 73.2%;
-  left: 79%;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-}
-.header__pic-sun {
-  background-image: url(../images/sun.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -6.5%;
-  left: 46.5%;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transform-origin: center;
-}
-.header__pic-town {
-  background-image: url(../images/town.svg);
-  width: 150%;
-  height: 100%;
-  z-index: 2;
-  position: absolute;
-  top: 34%;
-  left: 8.3%;
-  background-repeat: no-repeat;
-}
-.header__logo {
-  width: 270px;
-  height: 36px;
-  display: block;
-  color: #595653;
-  font-weight: 700;
-  font-size: 17px;
+@import url(../blocks/players/__btns/players__btns.css);
+@import url(../blocks/players/__detail/players__detail.css);
+@import url(../blocks/players/__item/players__item.css);
+@import url(../blocks/players/__items/players__items.css);
+@import url(../blocks/players/__name/players__name.css);
+@import url(../blocks/players/__status/players__status.css);
+@import url(../blocks/players/players.css);
 
-  line-height: 18px;
-  display: flex;
-  gap: 3px;
-}
-.header__logo-pic {
-  width: 95px;
-  height: 31px;
-}
-.header__logo-text {
-  text-decoration: none;
-  color: inherit;
-  text-transform: uppercase;
-}
-.header__box {
-  padding: 28px 0 128px 348px;
-  max-width: 542px;
-}
-.header__title {
-  margin: 0;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-top: 60px;
-  font-family: "Merriweather", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
+@import url(../blocks/rotation/rotation.css);
+@import url(../blocks/section-btn/section-btn.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-title/section-title.css);
 
-  line-height: 66px;
-  text-transform: uppercase;
-}
-.header__title-span {
-  display: block;
-  text-align: center;
-}
-
-.header__subtitle {
-  padding-top: 25px;
-  text-align: center;
-  margin-block: 0;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-}
-.header__btns {
-  padding-top: 40px;
-  display: flex;
-  gap: 15px;
-}
-.header__btn {
-  text-decoration: none;
-  border: #1f1f1f 2px solid;
-
-  border-radius: 66px;
-
-  width: 263px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  color: #1f1f1f;
-  padding: 12px 49px;
-  display: block;
-
-  text-align: center;
-}
-.marquee {
-  color: #f54932;
-
-  --gap: 1rem;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  user-select: none;
-  gap: var(--gap);
-  background-color: #f54932;
-  height: 60px;
-  z-index: 3;
-}
-.marquee__items {
-  padding-inline: 0;
-  margin-block: 0;
-  font-family: "Merriweather", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #ffffff;
-  align-items: center;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-around;
-  min-width: 121%;
-  gap: var(--gap);
-  max-width: fit-content;
-  animation: scroll 20s linear infinite;
-}
-
-.info__lecture_text {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
-
-.info__lecture {
-  padding: 80px 72px 65px 72px;
-  background-image: url(../images/playingСhess.png);
-  background-repeat: no-repeat;
-  background-position: 92.5% 69%;
-}
-.info__title {
-  text-transform: uppercase;
-  font-family: "Merriweather", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 49px;
-  margin-block: 0;
-  max-width: 768px;
-}
-.info__title:first-child {
-  padding-top: 27px;
-}
-
-.info__title-type-red {
-  color: #f54932;
-  font-weight: 700;
-}
-.info__title-type-p {
-  display: inline;
-}
-.info__bender {
-  background-image: url(../images/bender.png);
-  background-repeat: no-repeat;
-  background-position: 5% 0;
-}
-
-.info__bender-pic {
-  padding-left: 45px;
-  object-fit: contain;
-}
-.info__bender-box {
-  display: flex;
-  flex-direction: column;
-  padding-left: 43.1%;
-}
-.info__table-box {
-  padding: 30px 72px 33px 0;
-}
-.info__table {
-  margin-block: 0;
-  padding-inline: 0;
-  list-style: none;
-  padding-top: 13px; /*1366*/
-  max-width: 11000px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  display: grid;
-  grid-template-columns: 305px auto;
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.info__table-cell {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-top: 2px solid #d0d0d0;
-}
-
-.info__table-cell:nth-child(1) {
-  border-top: none;
-}
-.info__table-cell:nth-child(2) {
-  border-top: none;
-}
-
-.info__table-cell-type-fat {
-  font-weight: 600;
-  border-left: 2px solid #d0d0d0;
-  padding-left: 15px;
-}
-
-.section-subtitle {
-  color: #3057a2;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  margin-block: 0;
-}
-.info__table-cell-type-fat-del {
-  text-decoration: #f54932 line-through;
-  padding-right: 13px;
-}
-
-.stages {
-  padding: 200px 72px 0 72px;
-  position: relative;
-}
-.section-title {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 400;
-  font-size: 54px;
-  line-height: 65px;
-  text-transform: uppercase;
-  margin-block: 0;
-  grid-column: 1/3;
-}
-.stages__titile-box {
-  display: flex;
-  gap: 18px;
-  max-width: 600px;
-  height: 60px;
-  align-items: center;
-}
-.stages__text {
-  font-size: 20px;
-  line-height: 24px;
-  margin-block: 0;
-  padding-top: 7px;
-  max-width: 300px;
-}
-.stages__list {
-  margin-block: 0;
-  padding-inline-start: 0;
-  list-style: none;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding-top: 57px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 21.5% 21.5% 26.2%);
-  gap: 20px;
-}
-.stages__list-items {
-  padding: 20px 22px 20px 20px;
-  background-image: url(../images/paper.jpg);
-}
-.stages__list-item {
-  display: flex;
-  gap: 16px;
-  width: 100%;
-}
-
-.stages__list-items:nth-child(3) {
-  grid-row: 1 / 3;
-  grid-column: 3 / 3;
-}
-.stages__list-items:nth-child(7) {
-  grid-column: 2 / 4;
-}
-.stages__list-number {
-  min-width: 35px;
-  height: 35px;
-  background-color: #ffffff;
-  margin-block: 0;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.stages__list-text {
-  margin-block: 0;
-  max-width: 446px;
-}
-
-.stages__plane-pic {
-  position: absolute;
-  top: 61%;
-  left: 70%;
-}
-.players {
-  padding: 81px 72px 9px 72px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 68px auto);
-}
-
-.section-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-position: center;
-  border: none;
-}
-.players__btns {
-  display: flex;
-  width: 151px;
-  height: 44px;
-  justify-content: space-between;
-  padding-top: 9px;
-  padding-left: 63%;
-}
-.players__items {
-  margin-block: 0;
-  padding-inline: 0;
-  padding: 60px 38px;
-  display: flex;
-  gap: 93px;
-  grid-column: 1/4;
-}
-.players__item {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.players__name {
-  margin-block: 0;
-  padding-top: 28px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-}
-.players__status {
-  margin-block: 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 5px 0 19px 0;
-}
-.players__detail {
-  padding-block: 0;
-  padding-inline: 0;
-  text-decoration: none;
-  border: #3057a2 1px solid;
-  border-radius: 60px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  width: 113px;
-  height: 35px;
-  display: flex;
-  color: #3057a2;
-  align-items: center;
-  justify-content: center;
-}
-.players__detail:hover {
-  background-color: #3057a2;
-  color: #ffffff;
-}
-.btn {
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.btn:hover {
-  transition: 0.5s ease;
-}
-.btn:disabled {
-  background-color: #d6d6d6;
-  border: none;
-  cursor: no-drop;
-}
-.btn-type-dark {
-  background-color: #1f1f1f;
-  color: #ffffff;
-}
-.btn-type-dark:hover {
-  background-color: #fbce51;
-  color: #1f1f1f;
-  border: none;
-}
-.btn-type-light:hover {
-  background-color: #1f1f1f;
-  color: #ffffff;
-}
-
-.btn-type-left {
-  background-image: url(../images/btn_left.svg);
-  background-repeat: no-repeat;
-}
-.btn-type-right {
-  background-image: url(../images/btn_right.svg);
-  background-repeat: no-repeat;
-}
-.footer {
-  background-color: #e9ded4;
-  display: none;
-}
-.footer__text {
-  padding: 40px 72px 72px;
-  margin-block: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
-.main {
-  display: none;
-}
-
-.stages__btns {
-  display: none;
-  align-items: center;
-  padding-top: 28px;
-  padding-left: 80px;
-  gap: 16px;
-}
-.stages__points {
-  display: flex;
-  gap: 6px;
-}
-.stages__point {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-position: center;
-  background-color: #d9d9d9;
-}
-.stages__point-type-active {
-  background-color: #313131;
-}
-
+@import url(../blocks/stages/__btns/stages__btns.css);
+@import url(../blocks/stages/__list-item/stages__list-item.css);
+@import url(../blocks/stages/__list-items/stages__list-items.css);
+@import url(../blocks/stages/__list-number/stages__list-number.css);
+@import url(../blocks/stages/__list-text/stages__list-text.css);
+@import url(../blocks/stages/__list/stages__list.css);
+@import url(../blocks/stages/__plane-pic/stages__plane-pic.css);
+@import url(../blocks/stages/__point-type-active/stages__point-type-active.css);
+@import url(../blocks/stages/__point/stages__point.css);
+@import url(../blocks/stages/__points/stages__points.css);
+@import url(../blocks/stages/__text/stages__text.css);
+@import url(../blocks/stages/__titile-box/stages__titile-box.css);
+@import url(../blocks/stages/stages.css);

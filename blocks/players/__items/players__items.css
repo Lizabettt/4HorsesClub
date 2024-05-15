@@ -1,0 +1,8 @@
+.players__items {
+  margin-block: 0;
+  padding-inline: 0;
+  padding: 60px 38px;
+  display: flex;
+  gap: 93px;
+  grid-column: 1/4;
+}

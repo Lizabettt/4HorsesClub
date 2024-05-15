@@ -1,0 +1,8 @@
+.players__btns {
+  display: flex;
+  width: 151px;
+  height: 44px;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-left: 63%;
+}

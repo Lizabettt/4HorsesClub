@@ -1,0 +1,11 @@
+.info__table-cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #d0d0d0;
+}
+.info__table-cell:nth-child(1) {
+  border-top: none;
+}
+.info__table-cell:nth-child(2) {
+  border-top: none;
+}

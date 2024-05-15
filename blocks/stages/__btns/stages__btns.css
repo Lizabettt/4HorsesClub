@@ -1,0 +1,7 @@
+.stages__btns {
+  display: none;
+  align-items: center;
+  padding-top: 28px;
+  padding-left: 80px;
+  gap: 16px;
+}

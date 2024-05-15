@@ -1,0 +1,25 @@
+{
+  "name": "4HorsesClub",
+  "version": "1.0.0",
+  "description": "4HorsesClub",
+  "main": "index.js",
+  "dependencies": {
+    "css-to-bem-file-structure": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "css-to-bem-file-structure pages/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lizabettt/4HorsesClub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lizabettt/4HorsesClub/issues"
+  },
+  "homepage": "https://github.com/Lizabettt/4HorsesClub#readme"
+}

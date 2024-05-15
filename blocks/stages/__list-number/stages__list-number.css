@@ -1,0 +1,11 @@
+.stages__list-number {
+  min-width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  margin-block: 0;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

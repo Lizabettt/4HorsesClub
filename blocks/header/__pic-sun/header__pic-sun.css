@@ -1,0 +1,11 @@
+.header__pic-sun {
+  background-image: url(../../../images/sun.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -6.5%;
+  left: 46.5%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: center;
+}

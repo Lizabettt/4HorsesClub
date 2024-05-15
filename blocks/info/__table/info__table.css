@@ -1,0 +1,13 @@
+.info__table {
+  margin-block: 0;
+  padding-inline: 0;
+  list-style: none;
+  padding-top: 13px; /*1366*/
+  max-width: 11000px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: grid;
+  grid-template-columns: 305px auto;
+  grid-template-rows: repeat(5, 1fr);
+}

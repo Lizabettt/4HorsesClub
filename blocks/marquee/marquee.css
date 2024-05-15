@@ -1,0 +1,13 @@
+.marquee {
+  color: #f54932;
+
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  background-color: #f54932;
+  height: 60px;
+  z-index: 3;
+}

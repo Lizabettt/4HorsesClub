@@ -1,0 +1,7 @@
+.stages__titile-box {
+  display: flex;
+  gap: 18px;
+  max-width: 600px;
+  height: 60px;
+  align-items: center;
+}

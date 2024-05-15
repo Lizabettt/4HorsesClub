@@ -1,0 +1,11 @@
+.header__pic-chess-one {
+  background-image: url(../../../images/chess1.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 36%;
+  left: 52.5%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

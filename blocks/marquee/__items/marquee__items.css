@@ -1,0 +1,26 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+.marquee__items {
+  padding-inline: 0;
+  margin-block: 0;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-items: center;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 121%;
+  gap: var(--gap);
+  max-width: fit-content;
+  animation: scroll 20s linear infinite;
+}

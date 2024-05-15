@@ -1,0 +1,10 @@
+.page {
+  background-color: #ffffff;
+  color: #313131;
+  margin: 0 auto;
+  max-width: 1920px;
+  box-sizing: border-box;
+
+  font-family: "Golos", sans-serif;
+  font-style: normal;
+}

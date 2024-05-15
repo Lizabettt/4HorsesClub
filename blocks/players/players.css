@@ -1,0 +1,6 @@
+.players {
+  padding: 81px 72px 9px 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 68px auto);
+}

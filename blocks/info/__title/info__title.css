@@ -1,0 +1,12 @@
+.info__title {
+  text-transform: uppercase;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  margin-block: 0;
+  max-width: 768px;
+}
+.info__title:first-child {
+  padding-top: 27px;
+}

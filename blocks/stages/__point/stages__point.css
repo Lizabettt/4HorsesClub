@@ -1,0 +1,7 @@
+.stages__point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-position: center;
+  background-color: #d9d9d9;
+}
