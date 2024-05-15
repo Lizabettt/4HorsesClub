@@ -5,3 +5,9 @@
   background-position: center;
   border: none;
 }
+@media (max-width: 380px) {
+  .section-btn {
+    width: 36px;
+    height: 36px;
+  }
+}

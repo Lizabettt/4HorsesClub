@@ -24,3 +24,16 @@
   max-width: fit-content;
   animation: scroll 20s linear infinite;
 }
+
+@media (max-width: 1800px) {
+  .marquee__items {
+    min-width: 170%;
+  }
+}
+@media (max-width: 380px) {
+  .marquee__items {
+    min-width: 450%;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

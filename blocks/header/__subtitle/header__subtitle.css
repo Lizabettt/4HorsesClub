@@ -7,3 +7,9 @@
   font-size: 18px;
   line-height: 23px;
 }
+@media (max-width: 380px) {
+  .header__subtitle {
+    text-align: left;
+    padding-top: 23px;
+  }
+}

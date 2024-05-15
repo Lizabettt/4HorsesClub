@@ -2,3 +2,9 @@
   padding: 200px 72px 0 72px;
   position: relative;
 }
+@media (max-width: 380px) {
+  .stages {
+    padding: 100px 20px;
+    align-items: flex-start;
+  }
+}

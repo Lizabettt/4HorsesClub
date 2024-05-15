@@ -3,3 +3,14 @@
   border-left: 2px solid #d0d0d0;
   padding-left: 15px;
 }
+@media (max-width: 380px) {
+  .info__table-cell-type-fat {
+    padding-bottom: 17px;
+    padding-left: 0;
+    border-left: none;
+    border-bottom: 2px solid #d0d0d0;
+  }
+  .info__table-cell-type-fat:nth-child(8) {
+    padding-bottom: 20px;
+  }
+}

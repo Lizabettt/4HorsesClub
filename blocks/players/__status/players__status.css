@@ -5,3 +5,8 @@
   line-height: 24px;
   padding: 5px 0 19px 0;
 }
+@media (max-width: 380px) {
+  .players__status {
+    padding-top: 8px;
+  }
+}

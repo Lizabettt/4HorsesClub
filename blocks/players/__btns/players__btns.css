@@ -6,3 +6,13 @@
   padding-top: 9px;
   padding-left: 63%;
 }
+@media (max-width: 380px) {
+
+ 
+  .players__btns {
+    padding: 0;
+    order: 3;
+    width: 335px;
+    justify-content: center;
+    padding-bottom: 73px;
+  }}

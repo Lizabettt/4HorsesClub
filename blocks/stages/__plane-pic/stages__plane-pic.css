@@ -3,3 +3,11 @@
   top: 61%;
   left: 70%;
 }
+@media (max-width: 380px) {
+  .stages__plane-pic {
+    top: 33%;
+    left: 9%;
+    width: 90%;
+    rotate: -4deg;
+  }
+}

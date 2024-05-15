@@ -5,3 +5,9 @@
   font-size: 24px;
   line-height: 29px;
 }
+@media (max-width: 380px) {
+  .players__name {
+    width: 335px;
+    text-align: center;
+  }
+}

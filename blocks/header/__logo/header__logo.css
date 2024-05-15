@@ -10,3 +10,16 @@
   display: flex;
   gap: 3px;
 }
+
+@media (max-width: 1800px) {
+  .header__logo {
+    align-items: center;
+  }
+}
+@media (max-width: 380px) {
+  .header__logo {
+    font-size: 14px;
+    line-height: 16px;
+    gap: 5px;
+  }
+}

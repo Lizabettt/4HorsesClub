@@ -10,3 +10,18 @@
   z-index: 3;
   background-size: 10%;
 }
+
+@media (max-width: 1800px) {
+  .header__pic-chess-thee {
+    background-size: 14.5%;
+    left: 61%;
+  }
+}
+@media (max-width: 380px) {
+  .header__pic-chess-thee {
+    left: 35.7%;
+    top: 82%;
+    background-size: 26%;
+    rotate: 2deg;
+  }
+}

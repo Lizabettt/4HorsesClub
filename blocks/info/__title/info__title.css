@@ -10,3 +10,10 @@
 .info__title:first-child {
   padding-top: 27px;
 }
+
+@media (max-width: 380px) {
+  .info__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

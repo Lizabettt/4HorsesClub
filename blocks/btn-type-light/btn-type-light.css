@@ -6,3 +6,10 @@
   color: #ffffff;
 }
 
+@media (max-width: 380px) {
+  .btn__type-light {
+    background-color: #313131;
+    opacity: 0.2;
+    border: none;
+  }
+}

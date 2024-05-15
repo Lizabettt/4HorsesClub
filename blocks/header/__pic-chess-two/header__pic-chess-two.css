@@ -9,3 +9,16 @@
   height: 100%;
   z-index: 2;
 }
+@media (max-width: 1800px) {
+  .header__pic-chess-two {
+    left: 77.6%;
+  }
+}
+@media (max-width: 380px) {
+  .header__pic-chess-two {
+    top: 63.4%;
+    left: 51.3%;
+    background-size: 16%;
+    rotate: 6deg;
+  }
+}

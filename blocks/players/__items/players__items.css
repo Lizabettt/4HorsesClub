@@ -5,4 +5,11 @@
   display: flex;
   gap: 93px;
   grid-column: 1/4;
+  overflow: hidden;
+}
+@media (max-width: 380px) {
+  .players__items {
+    padding: 38px 0;
+    gap: 32px;
+  }
 }

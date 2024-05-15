@@ -14,3 +14,11 @@
 
   text-align: center;
 }
+@media (max-width: 380px) {
+  .header__btn {
+    padding: 13px 41px;
+    border: none;
+    z-index: 3;
+    width: 252px;
+  }
+}

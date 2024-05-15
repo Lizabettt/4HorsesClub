@@ -11,3 +11,8 @@
   height: 60px;
   z-index: 3;
 }
+@media (max-width: 380px) {
+  .marquee {
+    height: 38px;
+  }
+}

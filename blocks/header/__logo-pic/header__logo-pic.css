@@ -2,3 +2,8 @@
   width: 95px;
   height: 31px;
 }
+@media (max-width: 380px) {
+  .header__logo-pic {
+    width: 80px;
+  }
+}

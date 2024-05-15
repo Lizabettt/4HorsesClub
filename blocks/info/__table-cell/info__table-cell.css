@@ -9,3 +9,21 @@
 .info__table-cell:nth-child(2) {
   border-top: none;
 }
+
+@media (max-width: 380px) {
+  .info__table-cell {
+    padding-top: 12px;
+    grid-column: 1/3;
+    border-top: none;
+  }
+  .info__table-cell:nth-child(7) {
+    grid-column: 1/2;
+    border-bottom: 2px solid #d0d0d0;
+  }
+  .info__table-cell:nth-child(8) {
+    grid-column: 2/2;
+  }
+  .info__table-cell:nth-child(odd) {
+    padding-bottom: 0;
+  }
+}

@@ -9,3 +9,15 @@
   z-index: 1;
   transform-origin: center;
 }
+@media (max-width: 1800px) {
+  .header__pic-sun {
+    left: 615px;
+  }
+}
+@media (max-width: 380px) {
+  .header__pic-sun {
+    background-size: 93%;
+    left: 5px;
+    top: 410px;
+  }
+}

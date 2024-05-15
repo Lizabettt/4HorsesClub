@@ -5,3 +5,9 @@
   line-height: 24px;
   margin-block: 0;
 }
+@media (max-width: 380px) {
+  .section-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

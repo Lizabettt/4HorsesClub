@@ -10,3 +10,16 @@
   line-height: 66px;
   text-transform: uppercase;
 }
+
+@media (max-width: 1800px) {
+  .header__title {
+    padding-top: 63px;
+  }
+}
+@media (max-width: 380px) {
+  .header__title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 39px;
+  }
+}

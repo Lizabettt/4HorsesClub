@@ -8,3 +8,18 @@
   left: 8.3%;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 1800px) {
+  .header__pic-town {
+    left: -120px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__pic-town {
+    left: -106.5%;
+    top: 65.5%;
+    background-size: 47%;
+    width: 500%;
+  }
+}

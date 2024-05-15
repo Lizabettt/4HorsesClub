@@ -11,3 +11,9 @@
   grid-template-columns: 305px auto;
   grid-template-rows: repeat(5, 1fr);
 }
+@media (max-width: 380px) {
+  .info__table {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: auto;
+  }
+}

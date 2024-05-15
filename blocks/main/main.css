@@ -1,3 +1,8 @@
 .main {
   display: none;
 }
+@media (max-width: 1400px) {
+  .main {
+    display: block;
+  }
+}

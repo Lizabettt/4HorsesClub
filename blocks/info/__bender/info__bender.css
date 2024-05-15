@@ -1,5 +1,13 @@
 .info__bender {
-  background-image: url(../images/bender.png);
+  background-image: url(../../../images/bender.png);
   background-repeat: no-repeat;
   background-position: 5% 0;
+}
+@media (max-width: 380px) {
+  .info__bender {
+    padding: 20px;
+
+    background-position: 50% 2%;
+    background-size: 100%;
+  }
 }
