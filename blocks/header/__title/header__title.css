@@ -11,15 +11,21 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1750px) {
   .header__title {
     padding-top: 63px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__title {
+    font-size: 50px;
+    line-height: 52px;
+    padding-top: 39px;
   }
 }
 @media (max-width: 380px) {
   .header__title {
     font-size: 36px;
     line-height: 40px;
-    padding-top: 39px;
   }
 }

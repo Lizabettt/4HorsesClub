@@ -2,19 +2,29 @@
   background-image: url(../../../images/town.svg);
   width: 150%;
   height: 100%;
-  z-index: 2;
+  z-index: -2;
   position: absolute;
   top: 34%;
   left: 8.3%;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1750px) {
+  .header__pic-town {
+    left: -5%;
+  }
+}
+@media (max-width: 1500px) {
   .header__pic-town {
     left: -120px;
   }
 }
-
+@media (max-width: 1000px) {
+  .header__pic-town {
+    left: -50%;
+    top: 40%;
+  }
+}
 @media (max-width: 380px) {
   .header__pic-town {
     left: -106.5%;

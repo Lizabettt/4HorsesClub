@@ -7,10 +7,15 @@
   left: 79%;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: -2;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1750px) {
+  .header__pic-chess-four {
+    left: 78%;
+  }
+}
+@media (max-width: 1500px) {
   .header__pic-chess-four {
     left: 90.7%;
   }

@@ -3,6 +3,18 @@
   flex-direction: column;
   padding-left: 43.1%;
 }
+@media (max-width: 1300px) {
+  .info__bender-box {
+    padding-top: 52%;
+    padding-left: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .info__bender-box {
+    padding-top: 80%;
+    padding-left: 5%;
+  }
+}
 @media (max-width: 380px) {
   .info__bender-box {
     padding-top: 395px;

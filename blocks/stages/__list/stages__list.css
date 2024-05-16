@@ -11,15 +11,26 @@
   grid-template-rows: repeat(3, 21.5% 21.5% 26.2%);
   gap: 20px;
 }
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
+  .stages__list {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+}
 
+@media (max-width: 1000px) {
   .stages__list {
     padding-top: 185px;
     grid-template-columns: repeat(5, 100%);
     grid-template-rows: repeat(4, auto);
     grid-auto-flow: column;
+    overflow: hidden;
+  }
+}
+@media (max-width: 380px) {
+  .stages__list {
     row-gap: 0;
     font-size: 18px;
     line-height: 22px;
-    overflow: hidden;
-  }}
+  }
+}

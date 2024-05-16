@@ -1,7 +1,7 @@
 .info__title-type-p {
   display: inline;
 }
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
   .info__title-type-p {
     display: flex;
     height: 310px;

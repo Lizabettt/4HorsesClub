@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 1000px) {
   .stages__titile-box {
     flex-direction: column;
     gap: 12px;

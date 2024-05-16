@@ -3,7 +3,7 @@
   max-width: 542px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1750px) {
   .header__box {
     padding: 25px 0 131px 72px;
   }

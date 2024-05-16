@@ -1,6 +1,7 @@
 .info__table-box {
   padding: 30px 72px 33px 0;
 }
+
 @media (max-width: 380px) {
   .info__table-box {
     padding: 20px 0;

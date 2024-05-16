@@ -7,6 +7,18 @@
   grid-column: 1/4;
   overflow: hidden;
 }
+@media (max-width: 1300px) {
+  .players__items {
+    max-width: 780px;
+   
+  }
+}
+@media (max-width: 1000px) {
+  .players__items {
+    max-width: 300px;
+   
+  }
+}
 @media (max-width: 380px) {
   .players__items {
     padding: 38px 0;

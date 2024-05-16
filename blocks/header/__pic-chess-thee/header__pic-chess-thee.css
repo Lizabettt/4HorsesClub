@@ -7,14 +7,22 @@
   left: 58%;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: -2;
   background-size: 10%;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1750px) {
   .header__pic-chess-thee {
     background-size: 14.5%;
     left: 61%;
+  }
+}
+@media (max-width: 1000px) {
+  .header__pic-chess-thee {
+    left: 35.7%;
+    top: 82%;
+    background-size: 26%;
+    rotate: 2deg;
   }
 }
 @media (max-width: 380px) {

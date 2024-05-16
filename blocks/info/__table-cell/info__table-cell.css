@@ -10,7 +10,7 @@
   border-top: none;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
   .info__table-cell {
     padding-top: 12px;
     grid-column: 1/3;

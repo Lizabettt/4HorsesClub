@@ -25,15 +25,33 @@
   animation: scroll 20s linear infinite;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1900px) {
+  .marquee__items {
+    min-width: 152%;
+  }
+}
+@media (max-width: 1500px) {
   .marquee__items {
     min-width: 170%;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 1340px) {
   .marquee__items {
-    min-width: 450%;
+    min-width: 210%;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  .marquee__items {
+    min-width: 340%;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .marquee__items {
+    min-width: 450%;
   }
 }

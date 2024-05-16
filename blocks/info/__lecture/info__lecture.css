@@ -4,7 +4,11 @@
   background-repeat: no-repeat;
   background-position: 92.5% 69%;
 }
-
+@media (max-width: 1300px) {
+  .info__lecture {
+    background-position: center;
+  }
+}
 @media (max-width: 380px) {
   .info__lecture {
     padding: 20px;

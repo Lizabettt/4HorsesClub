@@ -1,7 +1,7 @@
 .main {
   display: none;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1360px) {
   .main {
     display: block;
   }

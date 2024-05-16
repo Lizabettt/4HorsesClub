@@ -1,5 +1,6 @@
 .btn-type-light {
   color: #1f1f1f;
+  background-image: url(../../../images/fon.jpg);
 }
 .btn-type-light:hover {
   background-color: #1f1f1f;

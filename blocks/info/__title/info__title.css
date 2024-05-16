@@ -11,7 +11,7 @@
   padding-top: 27px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
   .info__title {
     font-size: 28px;
     line-height: 38px;
