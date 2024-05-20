@@ -11,6 +11,7 @@
 }
 @media (max-width: 380px) {
   .info__title-type-p {
-    height: 310px;
+  
+    height: 338px;
   }
 }

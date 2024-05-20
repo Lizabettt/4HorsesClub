@@ -1,13 +1,13 @@
 .players__items {
   margin-block: 0;
   padding-inline: 0;
-  padding: 60px 38px;
+  padding: 58px 38px 62px;
   display: flex;
   gap: 93px;
   grid-column: 1/4;
   overflow: hidden;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
   .players__items {
     max-width: 780px;
    
@@ -15,12 +15,22 @@
 }
 @media (max-width: 1000px) {
   .players__items {
-    max-width: 300px;
+    max-width: 350px;
    
+  }
+}
+@media (max-width: 500px) {
+  .players__items {
+    max-width: 270px;
+    
+    padding: 38px 0;
+    gap: 32px;
   }
 }
 @media (max-width: 380px) {
   .players__items {
+    max-width: 350px;
+    
     padding: 38px 0;
     gap: 32px;
   }

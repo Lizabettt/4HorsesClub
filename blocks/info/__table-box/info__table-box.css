@@ -8,6 +8,6 @@
 }
 @media (max-width: 380px) {
   .info__table-box {
-    padding: 20px 0;
+    padding: 18px 0 25px;
   }
 }

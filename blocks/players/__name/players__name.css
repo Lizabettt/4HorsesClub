@@ -4,6 +4,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 }
 @media (max-width: 380px) {
   .players__name {

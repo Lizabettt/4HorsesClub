@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 68px auto);
+  
 }
+
 @media (max-width: 380px) {
   .players {
     padding: 20px;
