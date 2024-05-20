@@ -3,11 +3,17 @@
   background-repeat: no-repeat;
   background-position: 5% 0;
 }
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
   .info__bender {
     padding: 20px;
-
     background-position: 50% 2%;
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 380px) {
+  .info__bender {
+    padding: 5%;
     background-size: 100%;
   }
 }

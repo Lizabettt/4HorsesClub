@@ -7,6 +7,8 @@
 @media (max-width: 1300px) {
   .info__lecture {
     background-position: center;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 380px) {

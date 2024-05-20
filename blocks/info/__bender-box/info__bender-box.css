@@ -5,13 +5,13 @@
 }
 @media (max-width: 1300px) {
   .info__bender-box {
-    padding-top: 52%;
+    padding-top: 55%;
     padding-left: 5%;
   }
 }
 @media (max-width: 1000px) {
   .info__bender-box {
-    padding-top: 80%;
+    padding-top: 60%;
     padding-left: 5%;
   }
 }

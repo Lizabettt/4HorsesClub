@@ -2,3 +2,9 @@
   color: #f54932;
   font-weight: 700;
 }
+@media (max-width: 1300px) {
+  .info__title-type-red {
+    display: flex;
+    justify-content: center;
+  }
+}

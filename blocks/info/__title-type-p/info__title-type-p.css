@@ -4,7 +4,13 @@
 @media (max-width: 1300px) {
   .info__title-type-p {
     display: flex;
-    height: 310px;
+    height: 400px;
     align-items: flex-end;
+    justify-content: center;
+  }
+}
+@media (max-width: 380px) {
+  .info__title-type-p {
+    height: 310px;
   }
 }

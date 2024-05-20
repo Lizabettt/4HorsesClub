@@ -3,7 +3,7 @@
   border-left: 2px solid #d0d0d0;
   padding-left: 15px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
   .info__table-cell-type-fat {
     padding-bottom: 17px;
     padding-left: 0;
