@@ -1,0 +1,10 @@
+.btn-type-disabled {
+    color: #1f1f1f;
+    background-color:#ffffff
+    /* background-image: url(../../../images/fon.jpg); */
+  }
+  .btn-type-disabled:hover {
+    /* background-image: none; */
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }

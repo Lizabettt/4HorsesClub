@@ -1,8 +1,6 @@
 .header {
   background-image: url(../../../images/fon.jpg);
 
-  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
-  z-index: -5;
 }

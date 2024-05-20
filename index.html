@@ -8,12 +8,24 @@
   <link rel="stylesheet" href="pages/index.css" />
   <title>4HorsesClub</title>
 </head>
-<body class="page">
+<body class="page"> 
   <header class="header">
+     <div class="header__pic">
+      <div class="header__pic-sun rotation"></div>
+      <div class="header__pic-chess">
+        <div class="header__pic-chess-one"></div>
+        <div class="header__pic-chess-two"></div>
+      </div>
+      <div class="header__pic-town"></div>
+      <div class="header__pic-chess">
+        <div class="header__pic-chess-thee"></div>
+        <div class="header__pic-chess-four"></div>
+      </div>
+    </div>
     <div class="header__box">
       <div class="header__logo">
         <img class="header__logo-pic" src="./images/logo.svg" alt="Логотип" />
-        <a class="header__logo-text btn" href="#">
+        <a class="header__logo-text" href="#">
           Клуб <br />
           четырех коней</a>
       </div>
@@ -27,26 +39,14 @@
         васюкинского турнира по шахматам
       </p>
       <div class="header__btns">
-        <a class="header__btn btn btn-type-dark" href="#lecture">
+        <a class="header__btn header__btn_type-dark btn" href="#lecture">
           Поддержать шахматную мысль
         </a>
-        <a class="header__btn btn btn-type-light" href="#info">
+        <a class="header__btn header__btn_type-light btn" href="#info">
           Подробнее о турнире
         </a>
       </div>
-    </div>
-    <div class="header__pic">
-      <div class="header__pic-sun rotation"></div>
-      <div class="header__pic-chess">
-        <div class="header__pic-chess-one"></div>
-        <div class="header__pic-chess-two"></div>
-      </div>
-      <div class="header__pic-town"></div>
-      <div class="header__pic-chess">
-        <div class="header__pic-chess-thee"></div>
-        <div class="header__pic-chess-four"></div>
-      </div>
-    </div>
+    </div>    
     <div class="marquee">
       <ul class="marquee__items">
         <li class="marquee__item">
@@ -202,7 +202,7 @@
             section-btn 
             btn 
             btn-type-left
-            btn-type-light" 
+            btn-type-disabled" 
             type="button" 
             ></button>
         <div class="stages__points">

@@ -2,7 +2,7 @@
   background-color: #e9ded4;
   display: none;
 }
-@media (max-width: 1360px) {
+@media (max-width: 1370px) {
   .footer {
     display: block;
   }

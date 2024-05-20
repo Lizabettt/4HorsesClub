@@ -1,8 +1,8 @@
 .header__pic-town {
   background-image: url(../../../images/town.svg);
   width: 150%;
+
   height: 100%;
-  z-index: -2;
   position: absolute;
   top: 34%;
   left: 8.3%;
@@ -17,19 +17,39 @@
 @media (max-width: 1500px) {
   .header__pic-town {
     left: -120px;
+    background-size: 80%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .header__pic-town {
-    left: -50%;
-    top: 40%;
+    left: -200px;
+    top: 300px;
+        background-size: 1500px auto;
+    }
+  }
+
+    @media (max-width: 700px) {
+      .header__pic-town {
+        left: -200px;
+        top: 460px;
+        background-size: 1000px auto;
+      }
+      }
+    
+@media (max-width: 500px) {
+  .header__pic-town {
+    left: -400px;
+        top: 530px;
+
+    width: 500%;
   }
 }
 @media (max-width: 380px) {
   .header__pic-town {
-    left: -106.5%;
-    top: 65.5%;
-    background-size: 47%;
+    left: -410px;
+    top: 530px;
+    background-size: 900px auto;
     width: 500%;
+
   }
 }

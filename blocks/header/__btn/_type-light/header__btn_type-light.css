@@ -1,0 +1,36 @@
+.header__btn_type-light {
+  color: #1f1f1f;
+}
+
+.header__btn_type-light:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .header__btn_type-light {
+    position: relative;
+
+    z-index: 1;
+    color: #1f1f1f;
+  }
+  .header__btn_type-light:hover::before {
+    position: relative;
+    z-index: 2;
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+
+  .header__btn_type-light::before {
+    content: "";
+    border-radius: 66px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 90%;
+    z-index: -1;
+  }
+}

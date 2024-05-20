@@ -1,6 +1,7 @@
 .header__box {
   padding: 28px 0 128px 348px;
   max-width: 542px;
+  position: relative;
 }
 
 @media (max-width: 1750px) {
@@ -8,7 +9,22 @@
     padding: 25px 0 131px 72px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 1300px) {
+  .header__box {
+    padding: 25px 0 100px 72px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__box {
+    padding: 20px 0 230px 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__box {
+    padding: 20px 0 200px 50px;
+  }
+}
+@media (max-width: 500px) {
   .header__box {
     padding: 16px 8px 290px 20px;
   }

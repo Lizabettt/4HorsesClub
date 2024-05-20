@@ -14,11 +14,10 @@
 
   text-align: center;
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .header__btn {
     padding: 13px 41px;
     border: none;
-    z-index: 3;
-    width: 252px;
+    max-width: 252px;
   }
 }

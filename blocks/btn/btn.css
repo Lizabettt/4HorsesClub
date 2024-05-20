@@ -1,9 +1,15 @@
 .btn {
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 .btn:hover {
-  transition: 0.5s ease;
+  position: relative;
+  transition: 0.7s ease;
+  background-color: #fbce51;
+  z-index: 2;
+  color: #1f1f1f;
+  border: none;
+  scale: 1.05;
 }
 .btn:disabled {
   background-color: #d6d6d6;

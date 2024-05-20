@@ -1,0 +1,6 @@
+.btn-type-active {
+  background-color: #313131;
+}
+.btn-type-disabled:hover {
+  background-color: #fbce51;
+}

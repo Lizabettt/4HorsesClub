@@ -1,8 +1,9 @@
 .main {
   display: none;
 }
-@media (max-width: 1360px) {
+@media (max-width: 1370px) {
   .main {
     display: block;
+    overflow: hidden;
   }
 }
