@@ -1,12 +1,13 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 
+
 @import url(../blocks/btn-type-left/btn-type-left.css);
 @import url(../blocks/btn-type-right/btn-type-right.css);
 @import url(../blocks/btn/btn.css);
-@import url(../blocks/btn-type-disabled/btn-type-disabled.css);
-@import url(../blocks/btn-type-active/btn-type-active.css);
 
+@import url(../blocks/btn-type-active/btn-type-active.css);
+@import url(../blocks/btn-type-disabled/btn-type-disabled.css);
 @import url(../blocks/footer/__text/footer__text.css);
 @import url(../blocks/footer/footer.css);
 
@@ -73,13 +74,12 @@
 @import url(../blocks/stages/__list-text/stages__list-text.css);
 @import url(../blocks/stages/__list/stages__list.css);
 @import url(../blocks/stages/__plane-pic/stages__plane-pic.css);
-@import url(../blocks/stages/__point-type-active/stages__point-type-active.css);
 @import url(../blocks/stages/__point/stages__point.css);
 @import url(../blocks/stages/__points/stages__points.css);
 @import url(../blocks/stages/__text/stages__text.css);
 @import url(../blocks/stages/__titile-box/stages__titile-box.css);
 @import url(../blocks/stages/stages.css);
-
+@import url(../blocks/stages/__point-type-active/stages__point-type-active.css);
 /* *{
     outline: 4px solid red;
 } */
