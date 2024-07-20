@@ -61,11 +61,16 @@
 @import url(../blocks/players/__status/players__status.css);
 @import url(../blocks/players/players.css);
 @import url(../blocks/players/__foto/players__foto.css);
+@import url(../blocks/players/__numberBox/players__numberBox.css);
+@import url(../blocks/players/__slideNumPlayers/players__slideNumPlayers.css);
+@import url(../blocks/players/__span/players__span.css);
 
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/section-btn/section-btn.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/players/__currentSlide/players__currentSlide.css);
 @import url(../blocks/section-title/section-title.css);
+
 
 @import url(../blocks/stages/__btns/stages__btns.css);
 @import url(../blocks/stages/__list-item/stages__list-item.css);

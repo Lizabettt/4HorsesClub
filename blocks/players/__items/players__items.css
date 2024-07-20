@@ -30,8 +30,8 @@
 @media (max-width: 380px) {
   .players__items {
     max-width: 350px;
-    
+    overflow: visible;
     padding: 38px 0;
-    gap: 32px;
+    gap: 40px;
   }
 }

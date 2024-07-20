@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="pages/index.css" />
     <title>4HorsesClub</title>
   </head>
+
   <body class="page">
     <header class="header">
       <div class="header__pic">
@@ -220,12 +221,7 @@
         />
         <div class="stages__btns">
           <button
-            class="stages__btn 
-            section-btn 
-            btn 
-            btn-type-left 
-            btn-type-disabled
-            "
+            class="stages__btn section-btn btn btn-type-left btn-type-disabled"
             type="button"
           ></button>
           <div class="stages__points">
@@ -236,11 +232,7 @@
             <div class="stages__point"></div>
           </div>
           <button
-            class="stages__btn-type-active 
-            section-btn 
-            btn 
-            btn-type-right 
-            btn-type-active"
+            class="stages__btn-type-active section-btn btn btn-type-right btn-type-active"
             type="button"
           ></button>
         </div>
@@ -249,12 +241,19 @@
         <h2 class="section-title">Участники турнира</h2>
         <div class="players__btns">
           <button
-            class="section-btn btn btn-type-left btn-type-dark"
+            class="section-btn btn btn-type-left btn-type-active"
             type="button"
+            id="prev"
           ></button>
+          <div class="players__numberBox">
+            <p class="players__currentSlide">1</p>
+            <span class="players__span">/</span>
+            <p class="players__slideNumPlayers">6</p>
+          </div>
           <button
-            class="section-btn btn btn-type-right btn-type-dark"
+            class="section-btn btn btn-type-right btn-type-active"
             type="button"
+            id="next"
           ></button>
         </div>
         <ul class="players__items">

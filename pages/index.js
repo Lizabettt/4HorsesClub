@@ -1,59 +1,118 @@
 const carouselStages = document.querySelector(".stages__list");
 const stages = document.querySelectorAll(".stages__list-items");
 
+const carouselPlayers = document.querySelector(".players__items");
+
 const pointList = document.querySelector(".stages__points");
 const point = document.querySelectorAll(".stages__point");
 
 const btnLeft = document.querySelector(".btn-type-left");
 const btnRight = document.querySelector(".btn-type-right");
 
+const btnPrev = document.getElementById("prev");
+const btnNext = document.getElementById("next");
+
+const slideNumStages = 4;
+const slideNumPlayers = 5;
+const slideNumberPlayers = document.querySelector(".players__currentSlide");
+const slideNumberPlayersAll = document.querySelector(
+  ".players__slideNumPlayers"
+);
 let currentSlide = 0;
+let timer = 0;
 
 function heandleMovingRight() {
   currentSlide++;
-  if (currentSlide > stages.length - 1) {
-    currentSlide = 0;
-  }
-  changeSlide(currentSlide);
-  changeDisabled(currentSlide);
-  console.log(currentSlide);
 }
 
 function heandleMovingLeft() {
   currentSlide--;
-  if (currentSlide < 0) {
-    currentSlide = stages.length - 1;
-  }
-  changeSlide(currentSlide);
-  changeDisabled(currentSlide);
 }
 
+//движение этапы
+function heandleMovingRightStages() {
+  heandleMovingRight(currentSlide);
+  if (currentSlide > carouselStages.length - 1) {
+    currentSlide = 0;
+  }
+  changeSlide(currentSlide, carouselStages);
+  changeDisabled(currentSlide, slideNumStages);
+}
+
+function heandleMovingLeftStages() {
+  heandleMovingLeft(currentSlide);
+  if (currentSlide < 0) {
+    currentSlide = carouselStages.length - 1;
+  }
+  changeSlide(currentSlide, carouselStages);
+  changePoint(currentSlide);
+  changeDisabled(currentSlide, slideNumStages);
+}
+
+// движение игроки
+function heandleMovingRightPlayers() {
+  if (currentSlide >= slideNumPlayers) {
+    currentSlide = -1;
+  }
+  heandleMovingRight(currentSlide);
+  changeSlide(currentSlide, carouselPlayers);
+  changeDisabled(currentSlide, slideNumPlayers);
+  changeSlideNumber(currentSlide);
+  makeTimer();
+}
+function heandleMovingLeftPlayers() {
+  heandleMovingLeft(currentSlide);
+  changeSlide(currentSlide, carouselPlayers);
+  changeSlideNumber(currentSlide);
+  makeTimer();
+}
+// смена номера слайда
+function changeSlideNumber(slide) {
+  slideNumberPlayers.innerHTML = slide + 1;
+  slideNumberPlayersAll.innerText = slideNumPlayers+1;
+}
+
+// смена по таймеру
+function makeTimer() {
+  clearInterval(timer);
+  timer = setInterval(function () {
+    heandleMovingRightPlayers(currentSlide);
+  }, 4000);
+}
+
+makeTimer();
+
+//смена слайдов
+function changeSlide(slide, carouselItems) {
+  carouselItems.style.transform = "translateX(" + slide * -100 + "vw)";
+}
+
+// точки
 function handlePagingClick(e) {
   point.forEach((dot, i) => {
     if (dot === e.target) {
       currentSlide = i;
     }
   });
-  changeSlide(currentSlide);
+  changeSlide(currentSlide, carouselStages);
+  changePoint(currentSlide);
   changeDisabled(currentSlide);
 }
-function changeSlide(slide) {
+function changePoint(slide) {
   for (let i = 0; i < point.length; i++) {
     point[i].classList.remove("stages__point-type-active");
   }
   point[slide].classList.add("stages__point-type-active");
-  carouselStages.style.transform = "translateX(" + slide * -100 + "vw)";
 }
-function changeDisabled(slide) {
+// видимость кнопок
+function changeDisabled(slide, slideNum) {
   if (slide === 0) {
     btnLeft.disabled = true;
     btnLeft.classList.add("btn-type-disabled");
-    console.log("Slide=0");
     console.log(slide);
-  } else if (slide === 4) {
+  } else if (slide === slideNum) {
     btnRight.disabled = true;
     btnRight.classList.add("btn-type-disabled");
-    console.log("Slide=4");
     console.log(slide);
   } else {
     btnLeft.disabled = false;
@@ -62,12 +121,14 @@ function changeDisabled(slide) {
     btnRight.classList.remove("btn-type-disabled");
     btnLeft.classList.add("btn-type-active");
     btnRight.classList.add("btn-type-active");
-    console.log("Slide=123");
     console.log(slide);
   }
 }
 
 //listeners
-btnRight.addEventListener("click", heandleMovingRight);
-btnLeft.addEventListener("click", heandleMovingLeft);
+btnRight.addEventListener("click", heandleMovingRightStages);
+btnLeft.addEventListener("click", heandleMovingLeftStages);
 pointList.addEventListener("click", handlePagingClick);
+
+btnNext.addEventListener("click", heandleMovingRightPlayers);
+btnPrev.addEventListener("click", heandleMovingLeftPlayers);
