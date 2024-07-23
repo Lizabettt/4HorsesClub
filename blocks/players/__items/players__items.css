@@ -4,34 +4,15 @@
   padding: 58px 38px 62px;
   display: flex;
   gap: 93px;
-  grid-column: 1/4;
-  overflow: hidden;
-}
-@media (max-width: 1330px) {
-  .players__items {
-    max-width: 780px;
-   
-  }
-}
-@media (max-width: 1000px) {
-  .players__items {
-    max-width: 350px;
-   
-  }
 }
 @media (max-width: 500px) {
   .players__items {
-    max-width: 270px;
-    
     padding: 38px 0;
-    gap: 32px;
+    gap: 160px;
   }
 }
 @media (max-width: 380px) {
   .players__items {
-    max-width: 350px;
-    overflow: visible;
-    padding: 38px 0;
-    gap: 40px;
+    gap: 70px;
   }
 }

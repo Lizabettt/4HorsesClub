@@ -1,0 +1,24 @@
+.players__itemsBox {
+  overflow: hidden;
+  width: 90vw;
+  grid-column: 1/4;
+}
+
+@media (max-width: 1320px) {
+  .players__itemsBox {
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .players__itemsBox {
+    max-width: 370px;
+  }
+}
+
+@media (max-width: 500px) {
+  .players__itemsBox {
+    max-width: 310px;
+
+  }
+}

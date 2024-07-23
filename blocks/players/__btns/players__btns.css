@@ -4,7 +4,7 @@
   height: 44px;
   justify-content: space-between;
   padding-top: 9px;
-  padding-left: 63%;
+  padding-right: 6px;
 }
 @media (max-width: 1000px) {
   .players__btns {

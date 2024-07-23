@@ -57,6 +57,7 @@
 @import url(../blocks/players/__detail/players__detail.css);
 @import url(../blocks/players/__item/players__item.css);
 @import url(../blocks/players/__items/players__items.css);
+@import url(../blocks/players/__itemsBox/players__itemsBox.css);
 @import url(../blocks/players/__name/players__name.css);
 @import url(../blocks/players/__status/players__status.css);
 @import url(../blocks/players/players.css);

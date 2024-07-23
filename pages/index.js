@@ -35,7 +35,8 @@ function heandleMovingRightStages() {
   if (currentSlide > carouselStages.length - 1) {
     currentSlide = 0;
   }
-  changeSlide(currentSlide, carouselStages);
+  changeSlideStages(currentSlide, carouselStages);
+  changePoint(currentSlide);
   changeDisabled(currentSlide, slideNumStages);
 }
 
@@ -44,7 +45,7 @@ function heandleMovingLeftStages() {
   if (currentSlide < 0) {
     currentSlide = carouselStages.length - 1;
   }
-  changeSlide(currentSlide, carouselStages);
+  changeSlideStages(currentSlide, carouselStages);
   changePoint(currentSlide);
   changeDisabled(currentSlide, slideNumStages);
 }
@@ -55,10 +56,13 @@ function heandleMovingRightPlayers() {
     currentSlide = -1;
   }
   heandleMovingRight(currentSlide);
-  changeSlide(currentSlide, carouselPlayers);
-  changeDisabled(currentSlide, slideNumPlayers);
   changeSlideNumber(currentSlide);
-  makeTimer();
+  if (document.documentElement.clientWidth < 500) {
+    changeSlide(currentSlide, carouselPlayers);
+    makeTimer();
+  } else {
+    changeSlideXL(currentSlide, carouselPlayers);
+  }
 }
 function heandleMovingLeftPlayers() {
   heandleMovingLeft(currentSlide);
@@ -69,7 +73,7 @@ function heandleMovingLeftPlayers() {
 // смена номера слайда
 function changeSlideNumber(slide) {
   slideNumberPlayers.innerHTML = slide + 1;
-  slideNumberPlayersAll.innerText = slideNumPlayers+1;
+  slideNumberPlayersAll.innerText = slideNumPlayers + 1;
 }
 
 // смена по таймеру
@@ -83,8 +87,14 @@ function makeTimer() {
 makeTimer();
 
 //смена слайдов
-function changeSlide(slide, carouselItems) {
+function changeSlideStages(slide, carouselItems) {
   carouselItems.style.transform = "translateX(" + slide * -100 + "vw)";
+}
+function changeSlide(slide, carouselItems) {
+  carouselItems.style.transform = "translateX(" + slide * -405 + "px)";
+}
+function changeSlideXL(slide, carouselItems) {
+  carouselItems.style.transform = "translateX(" + slide * -413 + "px)";
 }
 
 // точки
@@ -109,11 +119,9 @@ function changeDisabled(slide, slideNum) {
   if (slide === 0) {
     btnLeft.disabled = true;
     btnLeft.classList.add("btn-type-disabled");
-    console.log(slide);
   } else if (slide === slideNum) {
     btnRight.disabled = true;
     btnRight.classList.add("btn-type-disabled");
-    console.log(slide);
   } else {
     btnLeft.disabled = false;
     btnRight.disabled = false;
@@ -121,7 +129,6 @@ function changeDisabled(slide, slideNum) {
     btnRight.classList.remove("btn-type-disabled");
     btnLeft.classList.add("btn-type-active");
     btnRight.classList.add("btn-type-active");
-    console.log(slide);
   }
 }
 
