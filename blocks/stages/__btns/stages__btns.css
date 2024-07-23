@@ -5,7 +5,7 @@
   padding-left: 80px;
   gap: 16px;
 }
-@media (max-width: 380px) {
+@media (max-width: 1000px) {
   .stages__btns {
     display: flex;
   }
